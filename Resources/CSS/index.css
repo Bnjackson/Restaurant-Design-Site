@@ -26,6 +26,7 @@ HEADER
     display: inline-block;
     padding-right: 5px;
     font-size: 19.25px;
+    border-right: black 1px solid;
 }
 
 .nav-container li a {
@@ -39,5 +40,10 @@ HEADER
 }
 
 .title-wrapper {
+    height: 100px;
+    width: 300px;
+    margin: 300px auto;
+    text-align: center;
+    font-size: 30px;
     
 }
