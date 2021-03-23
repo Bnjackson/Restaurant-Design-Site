@@ -44,6 +44,7 @@ HEADER
 .header-container {
     margin: 20px;
     height: 100vh;
+    position: relative;
 }
 
 .nav-container {
@@ -75,10 +76,27 @@ HEADER
     font-size: 30px;
 }
 
-
-
-
-
 .food-section-container {
     background-color: rgba(0, 0, 255, 0.3);
+}
+/*
+MAIN
+*/
+
+
+.description-section {
+    height: 30vh;
+    position: relative;
+}
+
+.text-wrapper {
+    width: 700px;
+    margin: 0 auto;
+    height: 200px;
+    
+}
+
+.text {
+    position: absolute;
+    top: 50%;
 }
