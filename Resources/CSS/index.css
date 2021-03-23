@@ -11,26 +11,6 @@ html, body {
     height: 100%;
 }
 
-main {
-    position: relative;
-}
-
-main:after {
-    content: "";
-    background-image: url(/Resources/Media/topography.svg); 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
-
 .unselectable {
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -48,7 +28,6 @@ HEADER
 }
 
 .nav-container {
-
 }
 
 .nav-container li {
@@ -69,34 +48,61 @@ HEADER
 }
 
 .title-wrapper {
-    height: 100px;
-    width: 300px;
-    margin: 300px auto;
-    text-align: center;
-    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.food-section-container {
-    background-color: rgba(0, 0, 255, 0.3);
+.title-wrapper h1 {
 }
+
 /*
 MAIN
 */
+main {
+    position: relative;
+}
+
+main:after {
+    content: "";
+    background-image: url(/Resources/Media/topography.svg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+
 
 
 .description-section {
     height: 30vh;
     position: relative;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+.section-wrapper {
+
+    z-index: 1;
+    width: 100%;
 }
 
 .text-wrapper {
-    width: 700px;
-    margin: 0 auto;
-    height: 200px;
-    
-}
-
-.text {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.text-wrapper h2 {
+
 }
