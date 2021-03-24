@@ -11,7 +11,7 @@ html, body {
     height: 100%;
 }
 
-.unselectable {
+.unselectable { /*Makes elements non-highlightable*/
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -81,18 +81,19 @@ main:after {
 }
 
 
-
-
+/*
+DESCRIPTION SECTION
+*/
 .description-section {
-    height: 30vh;
+    height: 40vh;
     position: relative;
-    background-color: rgba(0, 0, 255, 0.3);
 }
 
-.section-wrapper {
-
-    z-index: 1;
+.background-color-grey {
+    height: 100%;
+    z-index: 2;
     width: 100%;
+    background-color: rgb(234, 234, 234, 0.6);
 }
 
 .text-wrapper {
@@ -103,6 +104,20 @@ main:after {
     text-align: center; 
 }
 
-.text-wrapper h2 {
+/*
+FOOD SECTION
+*/
+.food-section-container {
+    height: 100vh;
+}
 
+.text-section-container {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding: 5% 5%;
+    margin: 0;
+}
+
+.text-section-container h3 {
 }
