@@ -37,8 +37,8 @@ HEADER
 
 .nav-container li {
     display: inline-block;
-    padding-right: 5px;
-    font-size: 19.25px;
+    padding-right: 10px;
+    font-size: 1.5rem;
     border-right: black 1px solid;
 }
 
@@ -117,21 +117,49 @@ FOOD, Drink etc SECTION
     height: 100%;
     width: 50%;
     text-align: center;
-    padding: 15% 10%;
-    margin: 0;
-    line-height: 1.6rem;
+    line-height: 2rem;
+    position: relative;
 }
 
+.text-section {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 50%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .text-section-container h3 {
-    margin: 10% 0;
     font-size: 2.5rem;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .text-section-container p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
+.reservations-button {
+    margin-top: 10%;
+    width: 50%;
+    height: 10%;
+    background-color: transparent;
+    border: 1px solid #000;
+    font-size: 100%;
+}
 
+.reservations-button:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.reservations-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
 /*
 MEDIA QUERIES
 */
