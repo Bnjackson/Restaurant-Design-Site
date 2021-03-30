@@ -2,6 +2,7 @@
 GLOBAL
 */
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -33,6 +34,7 @@ HEADER
 }
 
 .nav-container {
+
 }
 
 .nav-container li {
@@ -160,7 +162,10 @@ FOOD, Drink etc SECTION
     outline: none;
     box-shadow: none;
   }
+
 /*
 MEDIA QUERIES
 */
+@media only screen and () {
 
+}
