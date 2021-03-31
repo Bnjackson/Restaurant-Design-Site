@@ -21,9 +21,14 @@ html, body {
     user-select: none;
 }
 
+/*
+FONT-FAMILY AND FONT-SIZE
+*/
+
 h1, h2, h3 {
     font-family:'Share Tech Mono', monospace;;
 }
+
 /*
 HEADER
 */
@@ -110,7 +115,7 @@ DESCRIPTION SECTION
 /*
 FOOD, Drink etc SECTION 
 */
-.food-section-container, .drink-section-container, .delivery-section-container, .hours-location-section-container, .menus-section-container {
+.food-section-container, .drink-section-container, .delivery-section-container, .hours-location-section-container, .menus-section {
     height: 100vh;
 }
 
@@ -130,10 +135,6 @@ FOOD, Drink etc SECTION
     background-color: rgb(94, 130, 158, 0.6);
 }
 
-.menus-section-container {
-    background-color: rgb(185, 165, 128, 0.6);
-}
-
 .text-section-container {
     height: 100%;
     width: 50%;
@@ -145,7 +146,6 @@ FOOD, Drink etc SECTION
 .text-section {
     position: absolute;
     width: 40%;
-    height: 50%;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -163,6 +163,7 @@ FOOD, Drink etc SECTION
 
 .reservations-button {
     margin-top: 10%;
+    padding: 5%;
     width: 50%;
     height: 10%;
     background-color: transparent;
@@ -180,6 +181,27 @@ FOOD, Drink etc SECTION
     outline: none;
     box-shadow: none;
 }
+
+/*
+MENUS SECTION 
+*/
+.menus-section {
+    background-color: rgb(185, 165, 128, 0.6);
+    position: relative;
+}
+
+.menus-section-container {
+    position: absolute;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
 
 /*
 FOOTER
