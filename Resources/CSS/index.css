@@ -110,9 +110,28 @@ DESCRIPTION SECTION
 /*
 FOOD, Drink etc SECTION 
 */
-.food-section-container {
+.food-section-container, .drink-section-container, .delivery-section-container, .hours-location-section-container, .menus-section-container {
     height: 100vh;
+}
+
+.food-section-container {
     background-color: rgb(239, 164, 149, 0.6);
+}
+
+.drink-section-container {
+    background-color: rgb(255, 226, 104, 0.6);
+}
+
+.delivery-section-container {
+    background-color: rgb(58, 99, 81, 0.6);
+}
+
+.hours-location-section-container {
+    background-color: rgb(94, 130, 158, 0.6);
+}
+
+.menus-section-container {
+    background-color: rgb(185, 165, 128, 0.6);
 }
 
 .text-section-container {
@@ -127,7 +146,6 @@ FOOD, Drink etc SECTION
     position: absolute;
     width: 40%;
     height: 50%;
-    top: 50%;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -161,7 +179,14 @@ FOOD, Drink etc SECTION
 .reservations-button:focus {
     outline: none;
     box-shadow: none;
-  }
+}
+
+/*
+FOOTER
+*/
+.contact-section-container {
+    width: 100vh
+} 
 
 /*
 MEDIA QUERIES
