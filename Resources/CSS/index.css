@@ -9,8 +9,8 @@ GLOBAL
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html{
+    font-size: 62.5%;
 }
 
 .unselectable { /*Makes elements non-highlightable*/
@@ -21,12 +21,45 @@ html, body {
     user-select: none;
 }
 
+:focus {
+    outline: none;
+}
+
 /*
 FONT-FAMILY AND FONT-SIZE
 */
 
 h1, h2, h3 {
     font-family:'Share Tech Mono', monospace;;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+.text-section-container h3 {
+    font-size: 4.6rem;
+}
+
+p {
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+}
+
+.menus-title-wrapper h3, .newsletter-text-container h3 {
+    font-size: 5rem;
+}
+
+.reservations-button {
+    font-size: 1.6rem;
+}
+
+.menus-button-container button {
+    font-size: 2rem;
 }
 
 /*
@@ -44,8 +77,8 @@ HEADER
 
 .nav-container li {
     display: inline-block;
-    padding-right: 10px;
-    font-size: 1.5rem;
+    padding: 0 0.6rem 0 0.6rem;
+    font-size: 2.4rem;
     border-right: black 1px solid;
 }
 
@@ -69,6 +102,7 @@ HEADER
 }
 
 .title-wrapper h1 {
+
 }
 
 /*
@@ -93,7 +127,6 @@ main:after {
     position: absolute;
     z-index: -1;   
 }
-
 
 /*
 DESCRIPTION SECTION
@@ -139,7 +172,6 @@ FOOD, Drink etc SECTION
     height: 100%;
     width: 50%;
     text-align: center;
-    line-height: 2rem;
     position: relative;
 }
 
@@ -152,23 +184,15 @@ FOOD, Drink etc SECTION
     transform: translate(-50%, -50%);
 }
 .text-section-container h3 {
-    font-size: 2.5rem;
     margin-bottom: 10%;
-    margin-top: 5%;
-}
-
-.text-section-container p {
-    font-size: 1.5rem;
 }
 
 .reservations-button {
     margin-top: 10%;
     padding: 5%;
     width: 50%;
-    height: 10%;
     background-color: transparent;
     border: 1px solid #000;
-    font-size: 100%;
 }
 
 .reservations-button:hover {
@@ -177,9 +201,16 @@ FOOD, Drink etc SECTION
     transition: 0.5s;
 }
 
-.reservations-button:focus {
-    outline: none;
-    box-shadow: none;
+
+/*
+SWIPER
+*/
+.food-swiper {
+
+}
+
+.drink-swiper {
+
 }
 
 /*
@@ -193,7 +224,6 @@ MENUS SECTION
 .menus-section-container {
     position: absolute;
     width: 40%;
-    margin: 0 auto;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -201,14 +231,85 @@ MENUS SECTION
     transform: translate(-50%, -50%);
 }
 
+.menus-title-wrapper {
+    margin-bottom: 5%;
+}
 
+.menus-text-container p{
+    margin-bottom: 5%;
+}
+
+.menus-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menus-button-container button {
+    min-width: 40%;
+    padding: 2% 0;
+    margin-bottom: 2%;
+    border: 1px solid #fff;
+    color: rgb(185, 165, 128, 1);
+}
+
+.menus-button-container button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
 
 /*
 FOOTER
 */
 .contact-section-container {
-    width: 100vh
+    height: 100vh;
+    background-color: rgb(223, 227, 164, 0.7);
 } 
+
+.contact-section {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-text-container {
+    overflow: auto;
+}
+
+.newsletter-text-container h3 {
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.newsletter-text-container p {
+    margin-top: 10%;
+}
+
+.newsletter-form-container {
+
+}
+
+.newsletter-form-container input {
+    display: block;
+    margin: 1% auto;
+    width: 40%;
+    padding: 1%;
+    background: transparent;
+}
+
+.newsletter-form-container button {
+    height: 50%;
+    width: 15%;
+    padding: 1%;
+    background: transparent;
+    margin: 1%;
+}
+
+.contact-info {
+    opacity: 0.5;
+}
 
 /*
 MEDIA QUERIES
