@@ -9,7 +9,7 @@ GLOBAL
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
@@ -101,10 +101,6 @@ HEADER
     font-size: 2rem;
 }
 
-.title-wrapper h1 {
-
-}
-
 /*
 MAIN
 */
@@ -168,6 +164,10 @@ FOOD, Drink etc SECTION
     background-color: rgb(94, 130, 158, 0.6);
 }
 
+.flex-container {
+    display: flex;
+}
+
 .text-section-container {
     height: 100%;
     width: 50%;
@@ -183,6 +183,7 @@ FOOD, Drink etc SECTION
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 .text-section-container h3 {
     margin-bottom: 10%;
 }
@@ -201,6 +202,39 @@ FOOD, Drink etc SECTION
     transition: 0.5s;
 }
 
+/*
+FOOD, Drink etc SECTION images
+*/
+.background-image-section {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+.food-background {
+    background-image: url(/Resources/Media/Images/food-section-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.drink-background {
+    background-image: url(/Resources/Media/Images/drinks-section-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.delivery-background {
+    background-image: url(/Resources/Media/Images/delivery-section-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.location-background {
+    background-image: url(/Resources/Media/Images/location-section-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.
 
 /*
 SWIPER
